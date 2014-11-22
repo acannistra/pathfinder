@@ -12,6 +12,14 @@ path('GET',[]) ->
   {ok, [{titlelinks, Titlelinks}]}.
 
 
+collector(0, L) -> L;
+collector(Count,L) ->
+	receive
+		{spawning,N} -> collector(Count + N - 1, L);
+		{list,NewList} -> collector(Count - 1, [NewList | L])
+	end.
+	
+
 next(Word) ->
    Words = boss_db:find(titlelink, [{page_title, 'equals', Word}]),
    [To || {titlelink,_,From,To} <- Words].
