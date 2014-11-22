@@ -1,0 +1,82 @@
+
+=INFO REPORT==== 19-Nov-2014::20:47:10 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 19-Nov-2014::20:47:10 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 19-Nov-2014::20:47:10 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=INFO REPORT==== 19-Nov-2014::20:48:09 ===
+GET /greeting/hello [pathFinder] 200 7ms
+
+=ERROR REPORT==== 19-Nov-2014::20:48:14 ===
+GET / [pathFinder] 404 0ms
+
+=ERROR REPORT==== 19-Nov-2014::20:48:18 ===
+** Generic server <0.123.0> terminating 
+** Last message in was {route,"/greeting"}
+** When Server state == {state,pathFinder,
+                               ["pathFinder_greeting_controller"],
+                               45083,49180}
+** Reason for termination == 
+** {'module could not be loaded',
+       [{pathFinder_greeting_controller,module_info,[attributes]},
+        {boss_router_controller,default_action,2},
+        {boss_router_controller,handle_call,3},
+        {gen_server,handle_msg,5},
+        {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::20:48:18 ===
+	module: misultin_http
+	line: 708
+error in custom loop: {{undef,
+                           [{pathFinder_greeting_controller,module_info,
+                                [attributes]},
+                            {boss_router_controller,default_action,2},
+                            {boss_router_controller,handle_call,3},
+                            {gen_server,handle_msg,5},
+                            {proc_lib,init_p_do_apply,3}]},
+                       {gen_server,call,[<0.123.0>,{route,"/greeting"}]}} serving request: {req,
+                                                                                            #Port<0.6332>,
+                                                                                            http,
+                                                                                            {130,
+                                                                                             64,
+                                                                                             193,
+                                                                                             14},
+                                                                                            54544,
+                                                                                            undefined,
+                                                                                            keep_alive,
+                                                                                            undefined,
+                                                                                            {1,
+                                                                                             1},
+                                                                                            'GET',
+                                                                                            {abs_path,
+                                                                                             "/greeting"},
+                                                                                            [],
+                                                                                            [{'Host',
+                                                                                              "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                                                             {'Connection',
+                                                                                              "keep-alive"},
+                                                                                             {'Accept',
+                                                                                              "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                                                             {'User-Agent',
+                                                                                              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                                                             {'Accept-Encoding',
+                                                                                              "gzip,deflate,sdch"},
+                                                                                             {'Accept-Language',
+                                                                                              "en-US,en;q=0.8"},
+                                                                                             {'Cookie',
+                                                                                              "_boss_session=e88bd0e590c4b3497285b86c897041a046b5f8bc"}],
+                                                                                            <<>>,
+                                                                                            false}
+
+=INFO REPORT==== 19-Nov-2014::20:48:18 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=INFO REPORT==== 19-Nov-2014::20:48:21 ===
+GET /greeting/hello [pathFinder] 200 7ms
+
+=INFO REPORT==== 19-Nov-2014::20:48:55 ===
+GET /greeting/hello [pathFinder] 200 7ms

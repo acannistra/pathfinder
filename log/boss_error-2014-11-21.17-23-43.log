@@ -1,0 +1,163 @@
+
+=INFO REPORT==== 21-Nov-2014::17:23:43 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 21-Nov-2014::17:23:43 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 21-Nov-2014::17:23:43 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=INFO REPORT==== 21-Nov-2014::17:23:48 ===
+GET /titlelinks/list [pathFinder] 200 2027ms
+
+=INFO REPORT==== 21-Nov-2014::17:23:50 ===
+GET /titlelinks/list [pathFinder] 200 3198ms
+
+=INFO REPORT==== 21-Nov-2014::17:24:05 ===
+GET /titlelinks/path [pathFinder] 200 114ms
+
+=INFO REPORT==== 21-Nov-2014::17:24:42 ===
+GET /titlelinks/path [pathFinder] 200 12ms
+
+=INFO REPORT==== 21-Nov-2014::17:24:44 ===
+GET /titlelinks/path [pathFinder] 200 12ms
+
+=INFO REPORT==== 21-Nov-2014::17:24:52 ===
+GET /titlelinks/path [pathFinder] 200 11ms
+
+=INFO REPORT==== 21-Nov-2014::17:24:53 ===
+GET /titlelinks/path [pathFinder] 200 11ms
+
+=INFO REPORT==== 21-Nov-2014::17:25:07 ===
+GET /titlelinks/path [pathFinder] 200 107ms
+
+=INFO REPORT==== 21-Nov-2014::17:25:13 ===
+GET /titlelinks/path [pathFinder] 200 116ms
+
+=INFO REPORT==== 21-Nov-2014::17:25:23 ===
+GET /titlelinks/list [pathFinder] 200 2110ms
+
+=INFO REPORT==== 21-Nov-2014::17:25:38 ===
+GET /titlelinks/path [pathFinder] 200 117ms
+
+=INFO REPORT==== 21-Nov-2014::17:25:39 ===
+GET /titlelinks/path [pathFinder] 200 110ms
+
+=INFO REPORT==== 21-Nov-2014::17:26:02 ===
+GET /titlelinks/list [pathFinder] 200 2510ms
+
+=ERROR REPORT==== 21-Nov-2014::17:26:03 ===
+{function_clause,
+    [{erlydtl_runtime,init_counter_stats,
+         [{error,<<"#42S22Unknown column 'pageTitle' in 'where clause'">>},
+          undefined]},
+     {pathfinder_view_titlelinks_path_html,render_internal,4},
+     {pathfinder_view_titlelinks_path_html,render,2},
+     {boss_web_controller,render_view,6},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 21-Nov-2014::17:26:03 ===
+GET /titlelinks/path [pathFinder] 500 491ms
+
+=ERROR REPORT==== 21-Nov-2014::17:26:30 ===
+** Generic server <0.65.0> terminating 
+** Last message in was {find,titlelink,
+                             [{page_title,equals,'1968'}],
+                             all,0,id,str_ascending}
+** When Server state == {state,boss_db_adapter_mysql,<0.66.0>,[],
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_adapter_mysql,pack_value,['1968']},
+                     {boss_db_adapter_mysql,build_conditions1,2},
+                     {boss_db_adapter_mysql,build_select_query,6},
+                     {boss_db_adapter_mysql,find,7},
+                     {boss_db_controller,handle_call,3},
+                     {gen_server,handle_msg,5},
+                     {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 21-Nov-2014::17:26:30 ===
+{{function_clause,[{boss_db_adapter_mysql,pack_value,['1968']},
+                   {boss_db_adapter_mysql,build_conditions1,2},
+                   {boss_db_adapter_mysql,build_select_query,6},
+                   {boss_db_adapter_mysql,find,7},
+                   {boss_db_controller,handle_call,3},
+                   {gen_server,handle_msg,5},
+                   {proc_lib,init_p_do_apply,3}]},
+ {gen_server,call,
+             [<0.65.0>,
+              {find,titlelink,
+                    [{page_title,equals,'1968'}],
+                    all,0,id,str_ascending},
+              30000]}}
+
+=ERROR REPORT==== 21-Nov-2014::17:26:30 ===
+GET /titlelinks/path [pathFinder] 500 106ms
+
+=INFO REPORT==== 21-Nov-2014::17:27:12 ===
+GET /titlelinks/path [pathFinder] 200 120ms
+
+=INFO REPORT==== 21-Nov-2014::17:27:24 ===
+GET /titlelinks/path [pathFinder] 200 135ms
+
+=INFO REPORT==== 21-Nov-2014::17:32:48 ===
+GET /titlelinks/path [pathFinder] 200 14ms
+
+=INFO REPORT==== 21-Nov-2014::17:33:52 ===
+GET /titlelinks/path [pathFinder] 200 134ms
+
+=INFO REPORT==== 21-Nov-2014::17:34:51 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=INFO REPORT==== 21-Nov-2014::17:35:18 ===
+GET /titlelinks/path [pathFinder] 200 113ms
+
+=INFO REPORT==== 21-Nov-2014::17:37:42 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=ERROR REPORT==== 21-Nov-2014::17:38:20 ===
+{undef,[{titlelink,get,
+                   [pl_title,
+                    {titlelink,"titlelink-425",<<"Ama-elementhi">>,
+                               <<"Albert_Ghiorso">>}]},
+        {pathFinder_titlelinks_controller,'-next/2-lc$^0/1-0-',1},
+        {pathFinder_titlelinks_controller,path,3},
+        {boss_web_controller,execute_action,5},
+        {boss_web_controller,process_request,5},
+        {timer,tc,3},
+        {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 21-Nov-2014::17:38:20 ===
+GET /titlelinks/path [pathFinder] 500 104ms
+
+=INFO REPORT==== 21-Nov-2014::17:38:31 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=INFO REPORT==== 21-Nov-2014::17:39:40 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=INFO REPORT==== 21-Nov-2014::17:39:47 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=INFO REPORT==== 21-Nov-2014::17:39:54 ===
+GET /titlelinks/path [pathFinder] 200 12ms
+
+=INFO REPORT==== 21-Nov-2014::17:39:55 ===
+GET /titlelinks/path [pathFinder] 200 12ms
+
+=INFO REPORT==== 21-Nov-2014::17:40:04 ===
+GET /titlelinks/path [pathFinder] 200 13ms
+
+=INFO REPORT==== 21-Nov-2014::17:41:36 ===
+GET /titlelinks/path [pathFinder] 200 114ms
+
+=INFO REPORT==== 21-Nov-2014::17:42:09 ===
+GET /titlelinks/path [pathFinder] 200 117ms

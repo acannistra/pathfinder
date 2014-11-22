@@ -1,0 +1,2 @@
+-module(titlelink, [Id, PageTitle, PlTitle]).
+-compile(export_all).

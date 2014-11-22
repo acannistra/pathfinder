@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>{% block title %}Path{% endblock %}</title>
+</head>
+<body>
+{%block body %}
+<h3>Paths between words</h3>
+<ul>
+{% if titlelinks %}
+  {% for titlelink in titlelinks %}
+    <li>{{ titlelink}}
+  {% endfor %}
+{% else %}
+  <li>No titlelinks!
+{% endif %}
+</ul>
+{% endblock %}
+</body></html>

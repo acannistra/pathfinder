@@ -1,0 +1,2 @@
+-module(pagelink, [Id, PlFrom, PlNamespace, PlTitle, PlFromNamespace]).
+-compile(export_all).

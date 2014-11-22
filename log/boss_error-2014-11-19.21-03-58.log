@@ -1,0 +1,152 @@
+
+=INFO REPORT==== 19-Nov-2014::21:03:58 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 19-Nov-2014::21:03:58 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 19-Nov-2014::21:03:58 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=INFO REPORT==== 19-Nov-2014::21:04:02 ===
+GET /greeting/hello [pathFinder] 200 6ms
+
+=INFO REPORT==== 19-Nov-2014::21:05:21 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:05:36 ===
+GET /greeting/hello [pathFinder] 200 2ms
+
+=INFO REPORT==== 19-Nov-2014::21:05:47 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:05:52 ===
+GET /greeting/hello [pathFinder] 200 4ms
+
+=INFO REPORT==== 19-Nov-2014::21:06:00 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:06:23 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:06:40 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:06:45 ===
+GET /greeting/hello [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:07:06 ===
+GET /greeting/hello/Brett [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:07:10 ===
+GET /greeting/hello/Suck [pathFinder] 200 5ms
+
+=INFO REPORT==== 19-Nov-2014::21:07:19 ===
+GET /greeting/hello/Suck%20it%20Brett [pathFinder] 200 5ms
+
+=ERROR REPORT==== 19-Nov-2014::21:07:23 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',[],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:07:23 ===
+GET /greeting/hello/ [pathFinder] 500 4ms
+
+=INFO REPORT==== 19-Nov-2014::21:07:47 ===
+GET /greeting/hello/one/two [pathFinder] 200 5ms
+
+=ERROR REPORT==== 19-Nov-2014::21:07:57 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","two"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:07:57 ===
+GET /greeting/hello/one/two [pathFinder] 500 3ms
+
+=ERROR REPORT==== 19-Nov-2014::21:08:01 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","hello","two"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:08:01 ===
+GET /greeting/hello/one/hello/two [pathFinder] 500 9ms
+
+=ERROR REPORT==== 19-Nov-2014::21:08:07 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","two","two"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:08:07 ===
+GET /greeting/hello/one/two/two [pathFinder] 500 4ms
+
+=ERROR REPORT==== 19-Nov-2014::21:08:11 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","test","two"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:08:11 ===
+GET /greeting/hello/one/test/two [pathFinder] 500 4ms
+
+=ERROR REPORT==== 19-Nov-2014::21:08:31 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","test","two"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.303.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 19-Nov-2014::21:08:31 ===
+GET /greeting/hello/one/test/two [pathFinder] 500 3ms
+
+=INFO REPORT==== 19-Nov-2014::21:08:33 ===
+GET /greeting/hello/one/test [pathFinder] 200 5ms

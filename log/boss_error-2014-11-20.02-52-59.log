@@ -1,0 +1,79 @@
+
+=INFO REPORT==== 20-Nov-2014::02:52:59 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 20-Nov-2014::02:52:59 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 20-Nov-2014::02:52:59 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 20-Nov-2014::02:53:01 ===
+{function_clause,
+    [{pathFinder_greeting_controller,hello,
+         ['GET',
+          ["one","test"],
+          {pathFinder_greeting_controller,
+              {simple_bridge_request_wrapper,misultin_request_bridge,
+                  {misultin_req,<0.135.0>,36889},
+                  false,[],[],none}}]},
+     {boss_web_controller,execute_action,5},
+     {boss_web_controller,process_request,5},
+     {timer,tc,3},
+     {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 20-Nov-2014::02:53:01 ===
+GET /greeting/hello/one/test [pathFinder] 500 3ms
+
+=INFO REPORT==== 20-Nov-2014::02:53:12 ===
+GET /greeting/hello/Hi%20Brett! [pathFinder] 200 7ms
+
+=INFO REPORT==== 20-Nov-2014::02:53:17 ===
+GET /greeting/hello/Hi! [pathFinder] 200 5ms
+
+=ERROR REPORT==== 20-Nov-2014::02:56:06 ===
+{badarith,[{pathFinder_greeting_controller,double,3},
+           {boss_web_controller,execute_action,5},
+           {boss_web_controller,process_request,5},
+           {timer,tc,3},
+           {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 20-Nov-2014::02:56:06 ===
+GET /greeting/double/3 [pathFinder] 500 4ms
+
+=ERROR REPORT==== 20-Nov-2014::02:56:13 ===
+{badarith,[{pathFinder_greeting_controller,double,3},
+           {boss_web_controller,execute_action,5},
+           {boss_web_controller,process_request,5},
+           {timer,tc,3},
+           {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 20-Nov-2014::02:56:13 ===
+GET /greeting/double/hello [pathFinder] 500 4ms
+
+=ERROR REPORT==== 20-Nov-2014::02:57:52 ===
+GET /greeting/double/hello [pathFinder] 404 5ms
+
+=INFO REPORT==== 20-Nov-2014::02:57:57 ===
+GET /greeting/hello/one [pathFinder] 200 6ms
+
+=INFO REPORT==== 20-Nov-2014::03:04:02 ===
+GET /greeting/hello/one [pathFinder] 200 13ms
+
+=INFO REPORT==== 20-Nov-2014::03:19:44 ===
+GET /greeting/hello/ [pathFinder] 200 3ms
+
+=INFO REPORT==== 20-Nov-2014::04:43:05 ===
+GET /greeting/hello/ [pathFinder] 200 3ms
+
+=INFO REPORT==== 20-Nov-2014::04:46:54 ===
+GET /greeting/hello/ [pathFinder] 200 2ms
+
+=INFO REPORT==== 20-Nov-2014::04:47:47 ===
+GET /greeting/hello/ [pathFinder] 200 9ms
+
+=INFO REPORT==== 20-Nov-2014::04:48:01 ===
+GET /greeting/hello/ [pathFinder] 200 9ms
+
+=INFO REPORT==== 20-Nov-2014::04:48:48 ===
+GET /greeting/hello/ [pathFinder] 200 5ms
