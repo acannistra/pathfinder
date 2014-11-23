@@ -1,6 +1,7 @@
 -module(pathFinder_titlelinks_controller, [Req]).
 -compile(export_all).
 
+
 list('GET', []) ->
   Titlelinks = boss_db:find(titlelink, []),
   {ok, [{titlelinks, Titlelinks}]}.
@@ -9,7 +10,7 @@ path('GET',[]) ->
   From  = Req:query_param( "from" ),
   To = Req:query_param( "to" ),
   CollectorPid = spawn(fun () -> collector(1,[],self()) end),
-  path_finder(10,CollectorPid,From,To,[]),
+  path_finder(3,CollectorPid,From,To,[]),
   receive
 	{lists,Titlelinks} ->io:format("here ~p ~n",[Titlelinks])
   end,
@@ -24,7 +25,8 @@ collector(Count,L,ReturnPid) ->
 			PID ! ok,
 			 collector(Count + N - 1, L,ReturnPid);
 		{list,NewList} -> 
-			collector(Count - 1, [NewList | L],ReturnPid)
+			collector(Count - 1, [NewList | L],ReturnPid);
+		{processes,PID} -> PID ! {running, Count}, collector(Count,L,ReturnPid)
 	end.
 
 path_finder(_,Collector_PID,Word,EndWord,Path) 
@@ -43,12 +45,22 @@ path_finder(Remaining,Collector_PID,Word,EndWord,Path) ->
 	end,
 	NewPath = lists:append(Path, [Word]),
 	lists:foreach(fun (W) -> 
-		spawn(fun () -> 
-		path_finder(Remaining - 1, Collector_PID,W,EndWord,NewPath)
-		end)
+		spawn_pathFinder(Remaining - 1, Collector_PID, W, EndWord, NewPath)
 		end,
 		Words)
 	end.
+
+spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
+	Limit = 3000,
+	Collector_PID ! {processes, self()},
+	receive
+		{running, Count} -> ok
+	end,
+	if
+		Count >= Limit -> spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
+		true -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path) end)
+	end.
+
 
 next(Word) ->
    Words = boss_db:find(titlelink, [{page_title, 'equals', Word}]),
