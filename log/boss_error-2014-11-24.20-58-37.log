@@ -1,0 +1,96 @@
+
+=INFO REPORT==== 24-Nov-2014::20:58:37 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 24-Nov-2014::20:58:37 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 24-Nov-2014::20:58:37 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 24-Nov-2014::20:58:48 ===
+GET /titlelinks/lists [pathFinder] 404 49ms
+
+=ERROR REPORT==== 24-Nov-2014::20:59:18 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7340>,http,
+                                               {130,64,193,54},
+                                               57999,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               [],
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip, deflate, sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=9f611cb18fe7326c1a2df3e66b0ec38bb380e2ca"}],
+                                               <<>>,false}
+
+=INFO REPORT==== 24-Nov-2014::20:59:20 ===
+GET /titlelinks/list [pathFinder] 200 2050ms
+
+=ERROR REPORT==== 24-Nov-2014::20:59:54 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7624>,http,
+                                               {130,64,193,54},
+                                               58001,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=%22Hello%22",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip, deflate, sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=9f611cb18fe7326c1a2df3e66b0ec38bb380e2ca"}],
+                                               <<>>,false}
+
+=INFO REPORT==== 24-Nov-2014::21:00:59 ===
+GET /titlelinks/path [pathFinder] 200 72ms
+
+=ERROR REPORT==== 24-Nov-2014::21:01:27 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7701>,http,
+                                               {130,64,193,54},
+                                               58015,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=%22From%22&to=%22To%22",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip, deflate, sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=9f611cb18fe7326c1a2df3e66b0ec38bb380e2ca"}],
+                                               <<>>,false}

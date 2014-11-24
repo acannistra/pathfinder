@@ -1,0 +1,33 @@
+
+=INFO REPORT==== 24-Nov-2014::22:34:57 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 24-Nov-2014::22:34:57 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 24-Nov-2014::22:34:57 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=INFO REPORT==== 24-Nov-2014::22:35:00 ===
+GET /titlelinks/path [pathFinder] 200 2431ms
+
+=INFO REPORT==== 24-Nov-2014::22:36:00 ===
+GET /titlelinks/path [pathFinder] 200 381ms
+
+=INFO REPORT==== 24-Nov-2014::22:37:18 ===
+GET /titlelinks/path [pathFinder] 200 8ms
+
+=INFO REPORT==== 24-Nov-2014::22:37:19 ===
+GET /titlelinks/path [pathFinder] 200 7ms
+
+=INFO REPORT==== 24-Nov-2014::22:37:31 ===
+GET /titlelinks/path [pathFinder] 200 11ms
+
+=INFO REPORT==== 24-Nov-2014::22:37:51 ===
+GET /titlelinks/path [pathFinder] 200 8ms
+
+=INFO REPORT==== 24-Nov-2014::22:37:53 ===
+GET /titlelinks/path [pathFinder] 200 8ms
+
+=INFO REPORT==== 24-Nov-2014::22:38:07 ===
+GET /titlelinks/path [pathFinder] 200 2551ms

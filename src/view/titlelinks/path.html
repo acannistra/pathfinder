@@ -7,8 +7,15 @@
 <h3>Paths between words</h3>
 <ul>
 {% if titlelinks %}
-  {% for titlelink in titlelinks %}
-    <li>{{ titlelink}}
+  {% for path in titlelinks %}
+    <li>
+    {% for titlelink  in path %}
+	{% if titlelink != endword %}
+	  {{ titlelink }}->
+	{% else %}
+	  {{titlelink}}
+	{% endif %} 
+    {% endfor %}
   {% endfor %}
 {% else %}
   <li>No titlelinks!

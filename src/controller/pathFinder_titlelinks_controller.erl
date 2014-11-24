@@ -14,15 +14,16 @@ path('GET',[]) ->
   %Gets the to parameter
   To = Req:query_param( "to" ),
   %Spawns the collector with an empy paths list and 1 active process count
-  CollectorPid = spawn(fun () -> collector(1,[],self()) end),
+  Self = self(),
+  CollectorPid = spawn(fun () -> collector(1,[],Self) end),
   %Starts the path finder "root" at the initial node
-  path_finder(4,CollectorPid,From,To,[]),
-  %This receive never occurs -- the remaining issue with the code
+  path_finder(3,CollectorPid,From,To,[]),
+  %This receive never occurs -- the remaining issue with the code [BRETT EDIT: FIXED THIS]
   receive
 	{lists,Titlelinks} ->io:format("here ~p ~n",[Titlelinks])
   end,
-  {ok, [{titlelinks, Titlelinks}]}.
- % {ok, [{titlelinks, collector(1,[],self())}]}.
+  {ok, [{titlelinks, lists:sort(fun (A,B) -> length(A) < length(B) end,Titlelinks)},{endword,To}]}.
+% {ok, [{titlelinks, collector(1,[],self())}]}.
 
 %If the process count reaches 0 then the process is complete and it should pass all lists
 %  back to the initial process -- currently prints all lists and the message passing doesn't work
@@ -78,39 +79,55 @@ path_finder(Remaining,Collector_PID,Word,EndWord,Path) ->
 %  a set limit. Implemented as previous iterations crashed due to spawning
 %  more processes than the system's process limit
 spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
-	Limit = 3000,
-	Collector_PID ! {processes, self()},
-	receive
-		{done} -> Exit = true;
-		{running, Count} -> Exit = false,ok
-	end,
-	if
-		Exit -> ok;
-		Count >= Limit -> io:format("sleeping~n"),timer:sleep(100),spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
-		true -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path) end)
-	end.
+	spawn(fun() -> path_finder(N, Collector_PID,Word,EndWord,Path) end).
+%	Limit = 3000,
+%	Collector_PID ! {processes, self()},
+%	receive
+%		{done} -> ok;
+%		{running, Count} ->
+%			if
+%				Count >= Limit ->
+%					io:format("sleeping~n"),
+%					timer:sleep(100),
+%					spawn_pathFinder(N, Collector_PID, Word, EndWord, Path);
+%				true -> spawn(fun() -> path_finder(N, Collector_PID, Word, EndWord,
+%								   Path) end)
+%			end
+%	end.
+			
+
+
+%	receive
+%		{done} -> Exit = true;
+%		{running, Count} -> Exit = false,ok
+%	end,
+%	if
+%		Exit -> ok;
+%		Count >= Limit -> io:format("sleeping~n"),timer:sleep(100),spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
+%		true -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path) end)
+%	end.
 
 
 
-Spawner(SpawnList,Collector_PID,Length,EndWord) ->
-	Limit = 3000,
-	receive
-		{spawn,PathFinder} -> Spawner(insert(SpawnList,PathFinder),Collector_PID,Length + 1, EndWord)
-	after 100 -> ok
-	end,
-	Collector_PID ! {processes, self()},
-	receive
-		{running, Count} -> ok
-	end
-	Live = Count - Length,
-	if
-		Live < Limit, SpawnList =/= []->
-			[{N,Word,Path} | T] = SpawnList,
-			spawn(fun() -> path_finder(N,Collector_PID,Word,EndWord,Path) end);
-			Spawner(T,Collector_PID, Length - 1, EndWord);
-		true ->
-			Spawner(SpawnList, Collector_PID, Length, EndWord)
-	end.
+%spawner(SpawnList,Collector_PID,Length,EndWord) ->
+%	Limit = 3000,
+%	receive
+%		{spawn,PathFinder} -> spawner(insert(SpawnList,PathFinder),Collector_PID,Length + 1, EndWord)
+%	after 100 -> ok
+%	end,
+%	Collector_PID ! {processes, self()},
+%	receive
+%		{running, Count} -> ok
+%	end,
+%	Live = Count - Length,
+%	if
+%		Live < Limit, SpawnList =/= []->
+%			[{N,Word,Path} | T] = SpawnList,
+%			spawn(fun() -> path_finder(N,Collector_PID,Word,EndWord,Path) end);
+%			spawner(T,Collector_PID, Length - 1, EndWord);
+%		true ->
+%			spawner(SpawnList, Collector_PID, Length, EndWord)
+%	end.
 
 
 
