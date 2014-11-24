@@ -1,0 +1,447 @@
+
+=INFO REPORT==== 23-Nov-2014::19:39:58 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 23-Nov-2014::19:39:58 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 23-Nov-2014::19:39:58 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 23-Nov-2014::19:41:52 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7340>,http,
+                                               {209,6,52,39},
+                                               63075,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:42:50 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7650>,http,
+                                               {209,6,52,39},
+                                               63079,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:44:15 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7767>,http,
+                                               {209,6,52,39},
+                                               63081,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:44:42 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7882>,http,
+                                               {209,6,52,39},
+                                               63143,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:45:27 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7997>,http,
+                                               {209,6,52,39},
+                                               63157,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:46:34 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.8115>,http,
+                                               {209,6,52,39},
+                                               63159,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:49:41 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.8237>,http,
+                                               {209,6,52,39},
+                                               63163,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=INFO REPORT==== 23-Nov-2014::19:49:43 ===
+GET /titlelinks/path [pathFinder] 200 8ms
+
+=ERROR REPORT==== 23-Nov-2014::19:51:49 ===
+{undef,[{boss_record_lib,convert_value_to_type,[<<"3_uJanuwali">>,string]},
+        {pathFinder_titlelinks_controller,'-next/2-lc$^0/1-0-',1},
+        {pathFinder_titlelinks_controller,path_finder,6},
+        {pathFinder_titlelinks_controller,path,3},
+        {boss_web_controller,execute_action,5},
+        {boss_web_controller,process_request,5},
+        {timer,tc,3},
+        {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:51:49 ===
+GET /titlelinks/path [pathFinder] 500 73ms
+
+=ERROR REPORT==== 23-Nov-2014::19:53:22 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.8352>,http,
+                                               {209,6,52,39},
+                                               63171,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1baecd0e2e6945f884d623582b9b9971b44098af"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:53:27 ===
+{undef,[{boss_record_lib,convert_value_to_type,[<<"3_uJanuwali">>,undefined]},
+        {pathFinder_titlelinks_controller,'-next/2-lc$^0/1-0-',1},
+        {pathFinder_titlelinks_controller,path_finder,6},
+        {pathFinder_titlelinks_controller,path,3},
+        {boss_web_controller,execute_action,5},
+        {boss_web_controller,process_request,5},
+        {timer,tc,3},
+        {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:53:27 ===
+GET /titlelinks/path [pathFinder] 500 68ms
+
+=ERROR REPORT==== 23-Nov-2014::19:56:45 ===
+** Generic server <0.80.0> terminating 
+** Last message in was {find,titlelink,
+                             [{page_title,equals,bitstring}],
+                             all,0,id,str_ascending}
+** When Server state == {state,boss_db_adapter_mysql,<0.81.0>,[],
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_adapter_mysql,pack_value,[bitstring]},
+                     {boss_db_adapter_mysql,build_conditions1,2},
+                     {boss_db_adapter_mysql,build_select_query,6},
+                     {boss_db_adapter_mysql,find,7},
+                     {boss_db_controller,handle_call,3},
+                     {gen_server,handle_msg,5},
+                     {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:56:45 ===
+** Generic server <0.65.0> terminating 
+** Last message in was {find,titlelink,
+                             [{page_title,equals,bitstring}],
+                             all,0,id,str_ascending}
+** When Server state == {state,boss_db_adapter_mysql,<0.66.0>,[],
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_adapter_mysql,pack_value,[bitstring]},
+                     {boss_db_adapter_mysql,build_conditions1,2},
+                     {boss_db_adapter_mysql,build_select_query,6},
+                     {boss_db_adapter_mysql,find,7},
+                     {boss_db_controller,handle_call,3},
+                     {gen_server,handle_msg,5},
+                     {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:56:48 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.8926>,http,
+                                               {209,6,52,39},
+                                               63319,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=a8930921b9f81c8fd6b2d89ec2560f414193a92d"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:56:48 ===
+** Generic server <0.77.0> terminating 
+** Last message in was {find,titlelink,
+                             [{page_title,equals,bitstring}],
+                             all,0,id,str_ascending}
+** When Server state == {state,boss_db_adapter_mysql,<0.78.0>,[],
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_adapter_mysql,pack_value,[bitstring]},
+                     {boss_db_adapter_mysql,build_conditions1,2},
+                     {boss_db_adapter_mysql,build_select_query,6},
+                     {boss_db_adapter_mysql,find,7},
+                     {boss_db_controller,handle_call,3},
+                     {gen_server,handle_msg,5},
+                     {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:56:48 ===
+** Generic server <0.74.0> terminating 
+** Last message in was {find,titlelink,
+                             [{page_title,equals,bitstring}],
+                             all,0,id,str_ascending}
+** When Server state == {state,boss_db_adapter_mysql,<0.75.0>,[],
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               false,60,db,0}
+** Reason for termination == 
+** {function_clause,[{boss_db_adapter_mysql,pack_value,[bitstring]},
+                     {boss_db_adapter_mysql,build_conditions1,2},
+                     {boss_db_adapter_mysql,build_select_query,6},
+                     {boss_db_adapter_mysql,find,7},
+                     {boss_db_controller,handle_call,3},
+                     {gen_server,handle_msg,5},
+                     {proc_lib,init_p_do_apply,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:57:45 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.9042>,http,
+                                               {209,6,52,39},
+                                               63351,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=a8930921b9f81c8fd6b2d89ec2560f414193a92d"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::19:59:15 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.9081>,http,
+                                               {209,6,52,39},
+                                               63352,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Pragma',"no-cache"},
+                                                {'Cache-Control',"no-cache"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=a8930921b9f81c8fd6b2d89ec2560f414193a92d"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 23-Nov-2014::20:00:18 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.9202>,http,
+                                               {209,6,52,39},
+                                               63364,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "to=Michael_Schumacher&from=1969",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=a8930921b9f81c8fd6b2d89ec2560f414193a92d"}],
+                                               <<>>,false}

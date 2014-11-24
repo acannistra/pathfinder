@@ -1,0 +1,947 @@
+
+=INFO REPORT==== 24-Nov-2014::00:50:35 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 24-Nov-2014::00:50:35 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 24-Nov-2014::00:50:35 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 24-Nov-2014::00:52:07 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7340>,http,
+                                               {209,6,52,39},
+                                               50324,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2190.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2181.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2183.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2186.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2189.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2191.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2194.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2206.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2209.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2207.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2210.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2218.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2213.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2214.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2222.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2225.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2231.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2226.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2238.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2244.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2251.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2260.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2266.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2259.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2268.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2265.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2264.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2270.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2280.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2301.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2296.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2298.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2305.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2306.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2307.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2310.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2316.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2315.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2318.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2348.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2347.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2329.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2353.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2355.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2357.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2364.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2366.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2373.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2381.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2375.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2377.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2384.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2388.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2390.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2392.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2399.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2423.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2425.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2427.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2439.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2451.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2456.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2462.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2458.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2465.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2468.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2476.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2474.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2471.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2481.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2490.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2488.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2491.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2493.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2484.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2480.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2485.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2482.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2487.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2483.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2496.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2498.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2499.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2504.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2500.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2509.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2502.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2506.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2510.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2514.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2524.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2518.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2523.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2519.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2534.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2529.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2533.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2544.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2549.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2556.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2552.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2559.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2560.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2583.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2609.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2623.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2632.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2636.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2640.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2642.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2646.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2650.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2657.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2661.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2668.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2670.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2675.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2681.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2682.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2677.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2687.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2683.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2686.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2691.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2699.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2695.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2700.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2705.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2706.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2698.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2702.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2709.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2720.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2718.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2723.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2724.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2728.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2742.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2751.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2745.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2743.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2741.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2744.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2747.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2756.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2765.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2769.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2771.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2772.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2777.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2779.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2780.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2776.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2783.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2785.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2786.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2787.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2788.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2791.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2795.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2799.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:09 ===
+Error in process <0.2801.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2802.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2803.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2804.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2807.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2808.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2809.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2812.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2813.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2816.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2814.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2811.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2822.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2820.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2830.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2818.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2828.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2826.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2832.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2827.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2834.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2846.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2836.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2847.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2840.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2845.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2839.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2844.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2849.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2853.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2850.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2852.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2864.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2880.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2885.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2889.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2882.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2890.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2891.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2894.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2909.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2902.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2906.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2916.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2924.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2923.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2927.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2928.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2929.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2933.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2936.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2935.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2938.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2963.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2965.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2968.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2972.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2973.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2974.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:10 ===
+Error in process <0.2978.0> on node 'pathFinder@ip-172-31-40-152' with exit value: {badarg,[{io,format,[<0.57.0>,"sleeping~m",[]]},{pathFinder_titlelinks_controller,spawn_pathFinder,6},{lists,foreach,2}]}
+
+
+=ERROR REPORT==== 24-Nov-2014::00:52:20 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7659>,http,
+                                               {209,6,52,39},
+                                               50335,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}

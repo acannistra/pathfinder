@@ -1,0 +1,120 @@
+
+=INFO REPORT==== 24-Nov-2014::00:48:43 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 24-Nov-2014::00:48:43 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 24-Nov-2014::00:48:43 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 24-Nov-2014::00:49:18 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7340>,http,
+                                               {209,6,52,39},
+                                               50311,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Cache-Control',"max-age=0"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 24-Nov-2014::00:49:36 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7659>,http,
+                                               {209,6,52,39},
+                                               50312,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Pragma',"no-cache"},
+                                                {'Cache-Control',"no-cache"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 24-Nov-2014::00:49:52 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7842>,http,
+                                               {209,6,52,39},
+                                               50313,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Pragma',"no-cache"},
+                                                {'Cache-Control',"no-cache"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}
+
+=ERROR REPORT==== 24-Nov-2014::00:50:31 ===
+	module: misultin_http
+	line: 708
+error in custom loop: killed serving request: {req,#Port<0.7979>,http,
+                                               {209,6,52,39},
+                                               50314,undefined,keep_alive,
+                                               undefined,
+                                               {1,1},
+                                               'GET',
+                                               {abs_path,"/titlelinks/path"},
+                                               "from=Soweto&to=Roodepoort",
+                                               [{'Host',
+                                                 "ec2-54-173-58-136.compute-1.amazonaws.com:8001"},
+                                                {'Connection',"keep-alive"},
+                                                {'Pragma',"no-cache"},
+                                                {'Cache-Control',"no-cache"},
+                                                {'Accept',
+                                                 "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"},
+                                                {'User-Agent',
+                                                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.122 Safari/537.36"},
+                                                {'Accept-Encoding',
+                                                 "gzip,deflate,sdch"},
+                                                {'Accept-Language',
+                                                 "en-US,en;q=0.8"},
+                                                {'Cookie',
+                                                 "_boss_session=1ea551ebe75f0effec19e6742b59b41dce38f829"}],
+                                               <<>>,false}

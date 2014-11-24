@@ -81,12 +81,40 @@ spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
 	Limit = 3000,
 	Collector_PID ! {processes, self()},
 	receive
-		{running, Count} -> ok
+		{done} -> Exit = true;
+		{running, Count} -> Exit = false,ok
 	end,
 	if
+		Exit -> ok;
 		Count >= Limit -> io:format("sleeping~n"),timer:sleep(100),spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
 		true -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path) end)
 	end.
+
+
+
+Spawner(SpawnList,Collector_PID,Length,EndWord) ->
+	Limit = 3000,
+	receive
+		{spawn,PathFinder} -> Spawner(insert(SpawnList,PathFinder),Collector_PID,Length + 1, EndWord)
+	after 100 -> ok
+	end,
+	Collector_PID ! {processes, self()},
+	receive
+		{running, Count} -> ok
+	end
+	Live = Count - Length,
+	if
+		Live < Limit, SpawnList =/= []->
+			[{N,Word,Path} | T] = SpawnList,
+			spawn(fun() -> path_finder(N,Collector_PID,Word,EndWord,Path) end);
+			Spawner(T,Collector_PID, Length - 1, EndWord);
+		true ->
+			Spawner(SpawnList, Collector_PID, Length, EndWord)
+	end.
+
+
+
+
 
 
 %returns a list of lists(strings) of all words 
@@ -100,6 +128,12 @@ next(Word) ->
 %returns if a list contains an item or not
 contains(List, Item) -> length(lists:filter( fun(X) -> X =:= Item end, List)) > 0.
 
+
+%performs an ordered insertion on a list of tuples comparing item depth:
+%	expected tuple: N,Word,Path
+insert([],Item) -> [Item | []];
+insert([H = {N1,_,_}|T], Item = {N2,_,_}) when N1 < N2 -> [ H | insert(T,Item)];
+insert(List, Item) -> [Item | List].
 
 %Type of is no longer used but returns the type of a variable
 %   was used to determine the return type from boss_db:find

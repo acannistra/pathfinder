@@ -1,0 +1,45 @@
+
+=INFO REPORT==== 23-Nov-2014::19:36:21 ===
+Starting Boss in development mode....
+
+=INFO REPORT==== 23-Nov-2014::19:36:21 ===
+Starting master services on 'pathFinder@ip-172-31-40-152'
+
+=INFO REPORT==== 23-Nov-2014::19:36:21 ===
+Loading routes from "/home/ec2-user/pathFinder/priv/pathFinder.routes" ....
+
+=ERROR REPORT==== 23-Nov-2014::19:36:22 ===
+{badarg,[{io,format,[<0.57.0>,"~p~n",[]]},
+         {pathFinder_titlelinks_controller,path_finder,6},
+         {pathFinder_titlelinks_controller,path,3},
+         {boss_web_controller,execute_action,5},
+         {boss_web_controller,process_request,5},
+         {timer,tc,3},
+         {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:36:22 ===
+GET /titlelinks/path [pathFinder] 500 51ms
+
+=ERROR REPORT==== 23-Nov-2014::19:36:24 ===
+{badarg,[{io,format,[<0.57.0>,"~p~n",[]]},
+         {pathFinder_titlelinks_controller,path_finder,6},
+         {pathFinder_titlelinks_controller,path,3},
+         {boss_web_controller,execute_action,5},
+         {boss_web_controller,process_request,5},
+         {timer,tc,3},
+         {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:36:24 ===
+GET /titlelinks/path [pathFinder] 500 56ms
+
+=ERROR REPORT==== 23-Nov-2014::19:36:29 ===
+{badarg,[{io,format,[<0.57.0>,"~p~n",[]]},
+         {pathFinder_titlelinks_controller,path_finder,6},
+         {pathFinder_titlelinks_controller,path,3},
+         {boss_web_controller,execute_action,5},
+         {boss_web_controller,process_request,5},
+         {timer,tc,3},
+         {boss_web_controller,handle_request,3}]}
+
+=ERROR REPORT==== 23-Nov-2014::19:36:29 ===
+GET /titlelinks/path [pathFinder] 500 54ms
