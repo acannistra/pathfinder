@@ -16,7 +16,7 @@ path('GET',[]) ->
   %Spawns the collector with an empy paths list and 1 active process count
   CollectorPid = spawn(fun () -> collector(1,[],self()) end),
   %Starts the path finder "root" at the initial node
-  path_finder(3,CollectorPid,From,To,[]),
+  path_finder(4,CollectorPid,From,To,[]),
   %This receive never occurs -- the remaining issue with the code
   receive
 	{lists,Titlelinks} ->io:format("here ~p ~n",[Titlelinks])
@@ -84,7 +84,7 @@ spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
 		{running, Count} -> ok
 	end,
 	if
-		Count >= Limit -> spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
+		Count >= Limit -> io:format("sleeping~n"),timer:sleep(100),spawn_pathFinder(N,Collector_PID,Word,EndWord,Path);
 		true -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path) end)
 	end.
 
