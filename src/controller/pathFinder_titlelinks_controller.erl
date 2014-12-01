@@ -4,9 +4,9 @@
 
 list('GET', []) ->
   Titlelinks = boss_db:find(titlelink, []),
-  {ok, [{titlelinks, Titlelinks}]}.
+  {json, [{titlelinks, Titlelinks}]}.
 
-path('GET',[]) ->
+path2('GET',[]) ->
   %No error checking occurs -- query_param will return undefined if not present
   %Should check that both parameters are present and occur in the database
   %Gets the from parameter
@@ -16,14 +16,19 @@ path('GET',[]) ->
   %Spawns the collector with an empy paths list and 1 active process count
   Self = self(),
   CollectorPid = spawn(fun () -> collector(1,[],Self) end),
+  Spawner = spawn_link(fun () -> spawner([],CollectorPid,0,To) end),
   %Starts the path finder "root" at the initial node
-  path_finder(3,CollectorPid,From,To,[]),
+  path_finder(3,CollectorPid,From,To,[],Spawner),
   %This receive never occurs -- the remaining issue with the code [BRETT EDIT: FIXED THIS]
   receive
 	{lists,Titlelinks} ->io:format("here ~p ~n",[Titlelinks])
   end,
-  {ok, [{titlelinks, lists:sort(fun (A,B) -> length(A) < length(B) end,Titlelinks)},{endword,To}]}.
+  SortedLinks = lists:sort(fun (A,B) -> length(A) < length(B) end,Titlelinks),
+  {json, [{titlelinks, convertList(lists:map(fun convertList/1, SortedLinks)  )}]}.
 % {ok, [{titlelinks, collector(1,[],self())}]}.
+
+convertList(List) ->
+	 string:concat("[", string:concat(string:join(List,","),"]")).
 
 %If the process count reaches 0 then the process is complete and it should pass all lists
 %  back to the initial process -- currently prints all lists and the message passing doesn't work
@@ -37,21 +42,22 @@ collector(Count,L,ReturnPid) ->
 			 collector(Count + N - 1, L,ReturnPid);
 		%Indicates that a path has been successfully found and that 1 processes is dying
 		{list,NewList} -> 
+			io:format("List: ~p~n", [NewList]),
 			collector(Count - 1, [NewList | L],ReturnPid);
 		%Returns the current count to the requesting process and restarts the loop
 		{processes,PID} -> PID ! {running, Count}, collector(Count,L,ReturnPid)
 	end.
 
 %When the Current Word is the EndWord thn return a list to the collector
-path_finder(_,Collector_PID,Word,EndWord,Path) 
+path_finder(_,Collector_PID,Word,EndWord,Path,_) 
 	when Word =:= EndWord -> 
 		Collector_PID ! {list,lists:append(Path,[EndWord])};
 %When it has reached the maximum depth finish by messaging the collector
 %  that the process is spawning 0 new processes
-path_finder(0,Collector_PID,_,_,_) -> Collector_PID ! {spawning,self(),0};
+path_finder(0,Collector_PID,_,_,_,_) -> Collector_PID ! {spawning,self(),0};
 %Reaching this state means that the depth is not reached and the 
 %    word has not been found yet
-path_finder(Remaining,Collector_PID,Word,EndWord,Path) ->
+path_finder(Remaining,Collector_PID,Word,EndWord,Path,Spawner) ->
 	%cannot call functions in guards so store the value here
 	Contains = contains(Path,Word), 
 	if
@@ -70,7 +76,7 @@ path_finder(Remaining,Collector_PID,Word,EndWord,Path) ->
 	NewPath = lists:append(Path, [Word]),
 	lists:foreach(fun (W) -> 
 		%spawns a process for each word
-		spawn_pathFinder(Remaining - 1, Collector_PID, W, EndWord, NewPath)
+		spawn_pathFinder(Remaining - 1, Collector_PID, W, EndWord, NewPath,Spawner)
 		end,
 		Words)
 	end.
@@ -78,8 +84,9 @@ path_finder(Remaining,Collector_PID,Word,EndWord,Path) ->
 %spawns a collector only when the total number of pathFinders is less than
 %  a set limit. Implemented as previous iterations crashed due to spawning
 %  more processes than the system's process limit
-spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
-	spawn(fun() -> path_finder(N, Collector_PID,Word,EndWord,Path) end).
+spawn_pathFinder(N, Collector_PID, Word, EndWord, Path,Spawner) ->
+	Spawner ! {spawn, {N,Word,Path}}.
+%	spawn(fun() -> path_finder(N, Collector_PID,Word,EndWord,Path) end).
 %	Limit = 3000,
 %	Collector_PID ! {processes, self()},
 %	receive
@@ -109,29 +116,33 @@ spawn_pathFinder(N, Collector_PID, Word, EndWord, Path) ->
 
 
 
-%spawner(SpawnList,Collector_PID,Length,EndWord) ->
-%	Limit = 3000,
-%	receive
-%		{spawn,PathFinder} -> spawner(insert(SpawnList,PathFinder),Collector_PID,Length + 1, EndWord)
-%	after 100 -> ok
-%	end,
+spawner(SpawnList,Collector_PID,Length,EndWord) ->
+	Self = self(),
+	Limit = 3000,
+	receive
+		{spawn,{N,Word,Path}} -> spawn(fun () -> path_finder(N,Collector_PID,Word,EndWord,Path,Self) end),
+				spawner(SpawnList, Collector_PID, Length,EndWord)
+	%	{spawn,PathFinder} -> spawner(insert(SpawnList,PathFinder),Collector_PID,Length + 1, EndWord)
+	%after 1 -> ok
+	end.
+	%io:format("Made it 1~n"),
 %	Collector_PID ! {processes, self()},
 %	receive
 %		{running, Count} -> ok
 %	end,
+%	%io:format("Made it 2~n"),
 %	Live = Count - Length,
 %	if
 %		Live < Limit, SpawnList =/= []->
+%			%io:format("Made it 3~n"),
 %			[{N,Word,Path} | T] = SpawnList,
-%			spawn(fun() -> path_finder(N,Collector_PID,Word,EndWord,Path) end);
+%			%io:format("Path: ~p~n",[Word]),
+%			spawn(fun() -> path_finder(N,Collector_PID,Word,EndWord,Path,Self) end),
 %			spawner(T,Collector_PID, Length - 1, EndWord);
 %		true ->
+			%io:format("Made it 4~n"),
 %			spawner(SpawnList, Collector_PID, Length, EndWord)
 %	end.
-
-
-
-
 
 
 %returns a list of lists(strings) of all words 
